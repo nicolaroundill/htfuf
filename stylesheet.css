@@ -31,8 +31,9 @@ CSS for recipe steps
 	overflow: hidden;
 	border: 0 none;
 	box-shadow: none;
-	padding: 0;
-	margin: 0;
+	padding: 20px;
+
+	margin: auto;
 }
 
 .recipeDiv {
@@ -53,16 +54,15 @@ CSS for recipe steps
 
 h1 {
 	font-family: "messy", Verdana, Tahoma;
-	font-size: 60px;
-	max-height: 300px;
-	padding: 50px;
+	font-size: 4em;
+	max-height: 300px;	padding: 50px;
 	text-align: center;
 	color: #ffffff;
 }
 
 p {
 	font-family: Arial, Verdana, Tahoma;
-	font-size: 18px;
+	font-size: 1.2em;
 	text-align: center;
 	color: #6a5d50;
 }
