@@ -1,0 +1,86 @@
+/*Created by: Nicola Roundill
+Victoria University 2015
+MDDN 352
+Ubiqutious Computing*/
+
+/*
+CSS for banner section
+*/
+.bannerImage {
+	max-height: 500px;
+	min-height: 100px;
+	overflow: hidden;
+	border: 0 none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	background: 000;
+}
+
+.bannerDiv {
+	max-height: 400px;
+}
+
+/*
+CSS for recipe steps
+*/
+
+.recipeImage {
+	max-height: 300px;
+	max-width: 300px;
+	overflow: hidden;
+	border: 0 none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+}
+
+.recipeDiv {
+	max-height: 700px;
+	min-height: 200px;
+}
+
+.headerFooter{
+	max-height: 100px;
+	min-height: 50px;
+}
+
+/* Custom font set up. Font retrieved from http://www.dafont.com/djb-rubias-tiny-script.font?text=messy+kitchen&back=theme */
+@font-face{
+	font-family: "messy";
+	src: url("src/fonts/DJB_Rubia's_Tiny_Script.ttf");
+}
+
+h1 {
+	font-family: "messy", Verdana, Tahoma;
+	font-size: 60px;
+	max-height: 300px;
+	padding: 50px;
+	text-align: center;
+	color: #ffffff;
+}
+
+p {
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 18px;
+	text-align: center;
+	color: #6a5d50;
+}
+
+.thumbnail {
+	background: #999083;
+}
+
+.borderProperties {
+	border: 2px dashed #666;
+	padding: 30px;
+}
+
+.outerBorder {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	border: 0 none;
+}
+
