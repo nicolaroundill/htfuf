@@ -53,7 +53,7 @@ CSS for recipe steps
 
 h1 {
 	font-family: "messy", Verdana, Tahoma;
-	font-size: 4em;
+	font-size: 5em;
 	max-height: 300px;	padding: 50px;
 	text-align: center;
 	color: #ffffff;
@@ -61,7 +61,7 @@ h1 {
 
 p {
 	font-family: Arial, Verdana, Tahoma;
-	font-size: 1.2em;
+	font-size: 1.7em;
 	text-align: left;
 	color: #6a5d50;
 }
@@ -81,6 +81,7 @@ p {
 	padding-bottom: 5px;
 	padding-right: 20px;
 	border: 0 none;
+	box-shadow: 10px 10px 20px;
 }
 
 body {
