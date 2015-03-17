@@ -9,10 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<script src="js/bootstrap.min.js"></script>
-		<!--ScrollMagic-->
-		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.0/ScrollMagic.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.0/plugins/addIndicators.min.js"></script>
-		<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 		<link rel="stylesheet" href="stylesheet.css">
 
@@ -21,7 +18,14 @@
 
 
 	<body>
-	<div style="background: #2f2c28">
+	<img src = "src/img/knife01.png" id = "parallax1">
+	<img src = "src/img/knife02.png" id = "parallax2">
+	<img src = "src/img/knife03.png" id = "parallax3">
+	<img src = "src/img/knife01.png" id = "parallax4">
+	<img src = "src/img/knife02.png" id = "parallax5">
+	<img src = "src/img/knife03.png" id = "parallax6">
+
+	<div id = "content_layer"></div>
 
 		<!--Header-->
 			<div class="container">
@@ -76,8 +80,8 @@
 
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 				</div>
 			</div>
 		</div>
@@ -106,8 +110,8 @@
 
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 				</div>
 			</div>
 		</div>
@@ -138,8 +142,8 @@
 							</div>
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 				</div>
 			</div>
 		</div>
@@ -147,7 +151,7 @@
 
 
 		<!--Recipe step three-->
-<div class = "col-md-12 headerFooter"></div>
+		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
@@ -167,8 +171,8 @@
 
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 				</div>
 			</div>
 		</div>
@@ -176,7 +180,7 @@
 
 
 		<!--Recipe step four-->
-<div class = "col-md-12 headerFooter"></div>
+		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
@@ -198,8 +202,8 @@
 							</div>
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 				</div>
 			</div>
 		</div>
@@ -207,7 +211,7 @@
 
 
 		<!--Recipe step five-->
-<div class = "col-md-12 headerFooter"></div>
+		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
@@ -227,8 +231,8 @@
 
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 				</div>
 			</div>
 		</div>
@@ -236,7 +240,7 @@
 
 
 		<!--Recipe step six-->
-<div class = "col-md-12 headerFooter"></div>
+		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
@@ -258,16 +262,16 @@
 							</div>
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
+					</div>
 				</div>
 			</div>
-		</div>
 
 
 
 		<!--Recipe step seven-->
-<div class = "col-md-12 headerFooter"></div>
+			<div class = "col-md-12 headerFooter"></div>
 			<div class = "container">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
@@ -287,16 +291,17 @@
 
 						</div>
 					</div>
-				<!--Content footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
-				</div>
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
+
 			</div>
-		</div>
 
 
 		<!--Page Footer buffer-->
 		<!--div  class = "col-md-12" style = "height: 100px"></div-->
+
 	</div>
+
 
 		<!--Scripts and stuff can go here-->
 		<script>
@@ -305,9 +310,30 @@
 		//banner image is chicken laying an egg, with chicken sound that occurs when it lays it.
 		//playble gif (tap/click to play/stop) of relevant animation?
 
+		//Knife parallax code (no plugins)
+
+		function parallax() {
+
+			var parallax1 = document.getElementById('parallax1');
+			parallax1.style.top = (window.pageYOffset / 4) + 'px';
+			var parallax2 = document.getElementById('parallax2');
+			parallax2.style.top = (window.pageYOffset / 8) + 'px';
+			var parallax3 = document.getElementById('parallax3');
+			parallax3.style.top = (window.pageYOffset / 10) + 'px';
+			var parallax4 = document.getElementById('parallax4');
+			parallax4.style.top = (window.pageYOffset / 7) + 'px';
+			var parallax5 = document.getElementById('parallax5');
+			parallax5.style.top = (window.pageYOffset / 3) + 'px';
+			var parallax6 = document.getElementById('parallax6');
+			parallax6.style.top = (window.pageYOffset / 9) + 'px';
+
+		}
+
+		window.addEventListener("scroll", parallax, false);
+
+
+
 		</script>
-
-
 
 		
 	</body>
@@ -316,7 +342,7 @@
 To Do;
 Create graphics for webpage
 Add content
-fix scaling text issues
+
 
 -->
 

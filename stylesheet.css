@@ -32,7 +32,6 @@ CSS for recipe steps
 	border: 0 none;
 	box-shadow: none;
 	padding: 20px;
-
 	margin: auto;
 }
 
@@ -84,3 +83,71 @@ p {
 	border: 0 none;
 }
 
+body {
+	background-color: #2f2c28;
+}
+
+#parallax1 {
+	position: fixed;
+	z-index: -2;
+	max-height: 200px;
+	max-width: 32px;
+	opacity: 0.95;
+	width: 50%;
+	left: 5%;
+}
+
+#parallax2 {
+	position: fixed;
+	z-index: -3;
+	max-height: 200px;
+	max-width: 40px;
+	opacity: 0.3;
+	width: 50%;
+	left: 17%;
+
+}
+
+#parallax3 {
+	position: fixed;
+	z-index: -3;
+	max-height: 200px;
+	max-width: 40px;
+	opacity: 0.2;
+	width: 50%;
+	left: 34%;
+}
+
+#parallax4 {
+	position: fixed;
+	z-index: -3;
+	max-height: 200px;
+	max-width: 40px;
+	opacity: 0.75;
+	width: 50%;
+	left: 51%;
+}
+
+#parallax5 {
+	position: fixed;
+	z-index: -3;
+	max-height: 200px;
+	max-width: 40px;
+	opacity: 0.6;
+	width: 50%;
+	left: 68%;
+}
+
+#parallax6 {
+	position: fixed;
+	z-index: -3;
+	max-height: 200px;
+	max-width: 40px;
+	opacity: 0.8;
+	width: 50%;
+	left: 90%;
+}
+
+#content_layer{
+	position: absolute;
+}
