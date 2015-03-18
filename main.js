@@ -169,7 +169,7 @@ function scrollChange07(){
 	var imageSource07 = document.getElementById("served");
 	var part07y = $("#part07").offset().top;
 
-	if (yImage07 > part07y - 400 && yImage07 < 100000000){
+	if ($(window).scrollTop() + $(window).height() == $(document).height()){
 		imageSource07.src = "src/img/served02.png";
 	} else {
 		imageSource07.src = "src/img/served01.png";
