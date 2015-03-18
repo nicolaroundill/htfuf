@@ -11,6 +11,10 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.1/ScrollMagic.min.js"></script>
+		<script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
+
+
 		<link rel="stylesheet" href="stylesheet.css">
 
 
@@ -45,9 +49,9 @@
 
 
 
-		<!--The recipe starts here-->
+			<!--The recipe starts here-->
 
-			<div class = "thumbnail bannerImage" style = "background: #6a5d50">
+			<div class = "thumbnail bannerImage" style = "background: #6a5d50; box-shadow: 10px 10px 20px">
 				<img src = "src/img/chicken_banner.png" alt = "chicken">
 			</div>
 
@@ -68,15 +72,14 @@
 				<div class = "thumbnail borderProperties">
 					<div class = "col-md-12 headerFooter"></div>
 					<div class = "row">
-						<div class = "col-md-6 recipeDiv">
+						<div class = "col-md-12 recipeDiv">
 							
 							<p></p>
-							<p>Ingredients:</p>
-							<li><p>chicken</p></li>
-							<li><p>peas</p></li>
-							<li><p>potatoes</p></li>
-							<li><p>hope</p></li>
-							<li><p>ability to withstand hours of soul-crushing mistakes</p></li>
+							<h1 style = "font-size: 4em">Ingredients:</h1>
+							<img src = "src/img/potatoes.png" class = "ingreIcon">
+							<img src = "src/img/oven01.png" class = "ingreIcon">
+							<img src = "src/img/peas01.png" class = "ingreIcon">
+							<img src = "src/img/potatoes.png" class = "ingreIcon">
 
 						</div>
 					</div>
@@ -99,7 +102,7 @@
 					<div class = "row">
 						<div class = "col-md-6 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/timer.png" alt = "timer">
+								<img src = "src/img/timer.gif" alt = "timer">
 							</div>
 						</div>
 						<div class = "col-md-6 recipeDiv">
@@ -138,7 +141,7 @@
 						<div class = "col-md-1"></div>
 						<div class = "col-md-5 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/potatoes.png" alt = "timer">
+								<img src = "src/img/potatoes.png" alt = "timer" id = "potato-img">
 							</div>
 						</div>
 					</div>
@@ -160,7 +163,7 @@
 					<div class = "row">
 						<div class = "col-md-6 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/timer.png" alt = "timer">
+								<img src = "src/img/oven01.png" alt = "timer">
 							</div>
 						</div>
 						<div class = "col-md-6 recipeDiv">
@@ -198,7 +201,7 @@
 						<div class = "col-md-1"></div>
 						<div class = "col-md-5 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/potatoes.png" alt = "timer">
+								<img src = "src/img/peas01.png" alt = "timer">
 							</div>
 						</div>
 					</div>
@@ -220,7 +223,7 @@
 					<div class = "row">
 						<div class = "col-md-6 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/timer.png" alt = "timer">
+								<img src = "src/img/cutting02.png" alt = "timer">
 							</div>
 						</div>
 						<div class = "col-md-6 recipeDiv">
@@ -258,7 +261,7 @@
 						<div class = "col-md-1"></div>
 						<div class = "col-md-5 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/potatoes.png" alt = "timer">
+								<img src = "src/img/tinfoil01.png" alt = "timer">
 							</div>
 						</div>
 					</div>
@@ -280,7 +283,7 @@
 					<div class = "row">
 						<div class = "col-md-6 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/timer.png" alt = "timer">
+								<img src = "src/img/served01.png" alt = "timer">
 							</div>
 						</div>
 						<div class = "col-md-6 recipeDiv">
@@ -332,6 +335,31 @@
 		window.addEventListener("scroll", parallax, false);
 
 
+
+		</script>
+
+		<!--Working with ScrollMagic to add events to images-->
+		<script>
+
+		/*
+		//init controller
+		var controller = new ScrollMagic.Controller();
+
+		//create a scene
+		var scene = new ScrollMagic.Scene({
+			duration: 100000, //the scene should last for a scroll distance of 100px
+			offset: 50, //start this scene after scrolling 50px
+
+		})
+		.setPin("#potato-img") //pins the element for the scene duration
+		.addTo(controller); //assign the scene to the controller
+		*/
+
+		$(document).ready(function(){
+
+
+
+		});
 
 		</script>
 

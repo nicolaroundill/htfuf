@@ -54,9 +54,11 @@ CSS for recipe steps
 h1 {
 	font-family: "messy", Verdana, Tahoma;
 	font-size: 5em;
-	max-height: 300px;	padding: 50px;
+	max-height: 300px;	
+	
 	text-align: center;
 	color: #ffffff;
+	text-shadow: 3px 3px 5px #111;
 }
 
 p {
@@ -151,4 +153,9 @@ body {
 
 #content_layer{
 	position: absolute;
+}
+
+.ingreIcon {
+	max-width: 100px;
+	max-height: 100px;
 }
