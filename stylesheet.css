@@ -26,8 +26,8 @@ CSS for recipe steps
 */
 
 .recipeImage {
-	max-height: 300px;
-	max-width: 300px;
+	max-height: 400px;
+	max-width: 400px;
 	overflow: hidden;
 	border: 0 none;
 	box-shadow: none;
@@ -55,7 +55,7 @@ h1 {
 	font-family: "messy", Verdana, Tahoma;
 	font-size: 5em;
 	max-height: 300px;	
-	
+
 	text-align: center;
 	color: #ffffff;
 	text-shadow: 3px 3px 5px #111;
@@ -63,7 +63,7 @@ h1 {
 
 p {
 	font-family: Arial, Verdana, Tahoma;
-	font-size: 1.7em;
+	font-size: 1.8em;
 	text-align: left;
 	color: #6a5d50;
 }
@@ -158,4 +158,5 @@ body {
 .ingreIcon {
 	max-width: 100px;
 	max-height: 100px;
+	margin: auto;
 }
