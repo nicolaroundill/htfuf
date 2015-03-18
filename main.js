@@ -5,7 +5,7 @@ var imageSet04 = 1;
 var imageSet05 = 1;
 var imageSet06 = 1;
 //so you can change the function to begin earlier
-var yPadding = 400;
+var yPadding = 600;
 var scrollCount = 0;
 
 window.onload = function(){
