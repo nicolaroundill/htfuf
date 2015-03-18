@@ -10,8 +10,10 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<script src="js/bootstrap.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
 
-		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" type = "text/css" href="stylesheet.css">
+
 
 
 	</head>
@@ -95,7 +97,7 @@
 
 		<!--Recipe step one-->
 		<div class = "col-md-12 headerFooter"></div>
-		<div class = "container">
+		<div class = "container" id = "part01">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
@@ -103,7 +105,7 @@
 					<div class = "row">
 						<div class = "col-md-6 recipeDiv">
 							<div class = "thumbnail recipeImage">
-								<img src = "src/img/timer.gif" alt = "timer">
+								<img src = "src/img/timer.gif" alt = "timer" id = "timerImage">
 							</div>
 						</div>
 						<div class = "col-md-6 recipeDiv">
@@ -124,7 +126,7 @@
 
 		<!--Recipe step two-->
 		<div class = "col-md-12 headerFooter"></div>
-		<div class = "container">
+		<div class = "container" id = "part02">
 			<!--Content header buffer div-->
 
 			<div class = "thumbnail outerBorder">
@@ -156,7 +158,7 @@
 
 		<!--Recipe step three-->
 		<div class = "col-md-12 headerFooter"></div>
-		<div class = "container">
+		<div class = "container" id = "part03">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
@@ -185,7 +187,7 @@
 
 		<!--Recipe step four-->
 		<div class = "col-md-12 headerFooter"></div>
-		<div class = "container">
+		<div class = "container" id = "part04">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
@@ -216,7 +218,7 @@
 
 		<!--Recipe step five-->
 		<div class = "col-md-12 headerFooter"></div>
-		<div class = "container">
+		<div class = "container" id = "part05">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
@@ -245,7 +247,7 @@
 
 		<!--Recipe step six-->
 		<div class = "col-md-12 headerFooter"></div>
-		<div class = "container">
+		<div class = "container" id = "part06">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
@@ -276,7 +278,7 @@
 
 		<!--Recipe step seven-->
 			<div class = "col-md-12 headerFooter"></div>
-			<div class = "container">
+			<div class = "container" id = "part07">
 			<!--Content header buffer div-->
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
@@ -316,24 +318,7 @@
 
 		//Knife parallax code (no plugins)
 
-		function parallax() {
-
-			var parallax1 = document.getElementById('parallax1');
-			parallax1.style.top = (window.pageYOffset / 4) + 'px';
-			var parallax2 = document.getElementById('parallax2');
-			parallax2.style.top = (window.pageYOffset / 8) + 'px';
-			var parallax3 = document.getElementById('parallax3');
-			parallax3.style.top = (window.pageYOffset / 10) + 'px';
-			var parallax4 = document.getElementById('parallax4');
-			parallax4.style.top = (window.pageYOffset / 7) + 'px';
-			var parallax5 = document.getElementById('parallax5');
-			parallax5.style.top = (window.pageYOffset / 3) + 'px';
-			var parallax6 = document.getElementById('parallax6');
-			parallax6.style.top = (window.pageYOffset / 9) + 'px';
-
-		}
-
-		window.addEventListener("scroll", parallax, false);
+		
 
 
 
@@ -356,14 +341,10 @@
 		.addTo(controller); //assign the scene to the controller
 		*/
 
-		$(document).ready(function(){
-
-
-
-		});
 
 		</script>
 
+		<script src = "main.js"></script>
 		
 	</body>
 
