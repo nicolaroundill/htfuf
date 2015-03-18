@@ -155,12 +155,10 @@ body {
 }
 
 .ingreIcon img {
-	margin: 0 auto;
 	max-width: 100px;
 	max-height: 100px;
 }
 
 #iconMass {
-	margin: auto;
 	text-align: center;
 }
