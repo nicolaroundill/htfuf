@@ -1,3 +1,5 @@
+var splat = document.getElementById("gravySplat");
+
 //variable for scrollChange0#
 var imageSet02 = 1;
 var imageSet03 = 1;
@@ -172,40 +174,50 @@ function scrollChange07(){
 	var imageSource07 = document.getElementById("served");
 	var part07y = $("#part07").offset().top;
 
+
 	if ($(window).scrollTop() + $(window).height() == $(document).height()){
 		imageSource07.src = "src/img/served02.png";
+		//sound source http://soundbible.com/1733-Spit-Splat.html
+		splat.play();
 	} else {
 		imageSource07.src = "src/img/served01.png";
 	}
 }
 
-/*
-//function for pop ups
-function popup01 () {
-	$("smallPotatoes").click(function(){
-		$('[data-toggle = "popover"]').popover();
-	})
-		
-	
-}
-*/
+
  function popUpThisShit () {
- 	var popUpConent = document.getElementById("testPopupContent");
 
-            // Binding a click event
-            // From jQuery v.1.7.0 use .on() instead of .bind()
-            $('#popupTest').bind('click', function(e) {
+    //potatoes
+    var popUpConent = document.getElementById("potatoIcon");
 
-                // Prevents the default action to be triggered. 
-                e.preventDefault();
+    $('#potatoIcon').bind('click', function(e) {
+        e.preventDefault();
+        $('#popupPotato').bPopup();
+    });
 
-                // Triggering bPopup when click event is fired
-                $('#testPopupContent').bPopup({
+    //salt
+    var popUpConent = document.getElementById("saltIcon");
 
-                	//position: [100, 300]
-                });
+    $('#saltIcon').bind('click', function(e) {
+        e.preventDefault();
+        $('#popupSalt').bPopup();
+    });
 
-            });
+    //chicken
+    var popUpConent = document.getElementById("chickenIcon");
+
+    $('#chickenIcon').bind('click', function(e) {
+        e.preventDefault();
+        $('#popupChicken').bPopup();
+    });
+
+    //peas
+    var popUpConent = document.getElementById("peasIcon");
+
+    $('#peasIcon').bind('click', function(e) {
+        e.preventDefault();
+        $('#popupPeas').bPopup();
+    });
 
 
 

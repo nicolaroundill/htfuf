@@ -53,7 +53,7 @@ CSS for recipe steps
 
 h1 {
 	font-family: "messy", Verdana, Tahoma;
-	font-size: 5em;
+	font-size: 6em;
 	max-height: 300px;
 	text-align: center;
 	color: #ffffff;
@@ -61,11 +61,11 @@ h1 {
 }
 
 p {
-	font-family: Arial, Verdana, Tahoma;
+	font-family: Courier, Arial, Verdana;
 	font-size: 1.8em;
 	text-align: left;
 	color: #6a5d50;
-	vertical-align: middle;
+	padding: 1em;
 }
 
 .thumbnail {
@@ -88,7 +88,9 @@ p {
 
 body {
 	background-color: #2f2c28;
+
 }
+
 
 #parallax1 {
 	position: fixed;
@@ -165,12 +167,21 @@ body {
 }
 
 
-#testPopupContent { 
-	display: none;
-	text-align: center; 
-
+#popupPotato{
+	display: none;	
 }
 
+#popupSalt {
+	display: none;
+}
+
+#popupChicken {
+	display: none;
+}
+
+#popupPeas {
+	display: none;
+}
 
 
 

@@ -11,24 +11,29 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+		
 		<!--Pop up script-->
-
     	<script src="js/bpopup.js"></script>
 
 		<link rel="stylesheet" type = "text/css" href="stylesheet.css">
-
-
 
 	</head>
 
 
 	<body>
+
 	<img src = "src/img/knife01.png" id = "parallax1">
 	<img src = "src/img/knife02.png" id = "parallax2">
 	<img src = "src/img/knife03.png" id = "parallax3">
 	<img src = "src/img/knife01.png" id = "parallax4">
 	<img src = "src/img/knife02.png" id = "parallax5">
 	<img src = "src/img/knife03.png" id = "parallax6">
+
+	<div id = "initSound">
+		<audio id = "gravySplat">
+			<source src = "src/sound/splatSound.wav" type = "audio/wav"> 
+		</audio>
+	</div>
 
 	<div id = "content_layer"></div>
 
@@ -74,25 +79,39 @@
 					<div class = "row">
 						<div class = "col-md-12 recipeDiv">
 							
-							<h1 style = "font-size: 4em">Shit you need:</h1>
+							<h1 style = "font-size: 5em">Shit you need:</h1>
 						</div>
 
 						<div class = "col-md-12 ingreIcon">
 							<div id="iconMass">
-								<img src = "src/img/potatoes.png" id = "smallPotatoes">
-								<img src = "src/img/oven01.png">
-								<img src = "src/img/peas01.png">
-								<img src = "src/img/potatoes.png">
 
-								<img id = "popupTest" src = "src/img/potatoes.png">
 
-								
-								<div id = "testPopupContent" class = "thumbnail">
-									<img id = "popupTest" src = "src/img/potatoes.png">
-									POTATOOOOOOES
+								<img src = "src/img/potatoesIcon.png" id = "potatoIcon">
+
+								<div id = "popupPotato" class = "thumbnail">
+									<img src = "src/img/potatoesIcon.png" id = "potatoIcon">
 								</div>
-								
 
+
+								<img src = "src/img/saltIcon.png" id = "saltIcon">
+
+								<div id = "popupSalt" class = "thumbnail">
+									<img src = "src/img/saltIcon.png" id = "saltIcon">
+								</div>
+
+
+								<img src = "src/img/chickenIcon.png" id = "chickenIcon">
+
+								<div id = "popupChicken" class = "thumbnail">
+									<img src = "src/img/chickenIcon.png" id = "chickenIcon">
+								</div>
+
+
+								<img src = "src/img/peasIcon.png" id = "peasIcon">	
+
+								<div id = "popupPeas" class = "thumbnail">
+									<img src = "src/img/peasIcon.png" id = "peasIcon">
+								</div>
 
 							</div>
 						</div>
@@ -184,7 +203,7 @@
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
-							<p>Get an oven dish. Add potatoes. Add chicken. Oil. Spill oil on the fucking floor. It’s okay, cats love oil. Call your pet. Fuck yes, clean floor.  Don't have a pet? It’s okay, children work too. Put dish in oven. Wait an hour and a half. Fuck yes. Chill time.</p>
+							<p>Get an oven dish. Add potatoes. Add chicken. Oil. Spill oil on the fucking floor. It's okay, cats love oil. Call your pet. Fuck yes, clean floor.  Don't have a pet? It's okay, children work too. Put dish in oven. Wait an hour and a half. Fuck yes. Chill time.</p>
 
 						</div>
 					</div>
@@ -208,7 +227,6 @@
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
-							<p>Step four.</p>
 							<p>An hour and twenty minutes passed? Fuck yeah, pea time. Pot. Frozen peas. Water. Element on. Pot on element. Sorted. Leave for 10 minutes, unless that shit boils over.</p>
 
 						</div>
@@ -267,7 +285,7 @@
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
-							<p>Tinfoil chicken. Return to oven. Oven isn't hot? Dafaq? Realise that the time being set to auto off means the oven wasn’t ever properly on. Well fuck. Fix timer. Re-add potatoes to oven. Wait another fucking hour.</p>
+							<p>Tinfoil chicken. Return to oven. Oven isn't hot? Dafaq? Realise that the time being set to auto off means the oven wasn't ever properly on. Well fuck. Fix timer. Re-add potatoes to oven. Wait another fucking hour.</p>
 
 						</div>
 						<div class = "col-md-1"></div>
@@ -282,6 +300,7 @@
 					</div>
 				</div>
 			</div>
+
 
 
 
@@ -301,7 +320,7 @@
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
-							<p>Hour passed. Serve barely edible fucking chicken, overcooked fucking potatoes and overcooked fucking peas to your family. Bonus points if you have guests over. Eat. Pray to the gods no one gets sick. Cry a little. Pussy.</p>
+							<p>Hour passed. Serve barely edible fucking chicken, overcooked fucking potatoes and overcooked fucking peas to your family. Cover with gravy. Bonus points if you have guests over. Eat. Pray to the gods no one gets sick. Cry a little. Pussy.</p>
 
 						</div>
 					</div>
@@ -314,46 +333,11 @@
 		<!--Page Footer buffer-->
 		<!--div  class = "col-md-12" style = "height: 100px"></div-->
 
-	</div>
-
-
-		<!--Scripts and stuff can go here-->
-		<script>
-
-		//when scrolling, image changes (jess and russ wedding invite parallax for example). However this doesn't happen on mobile - unless circular pop-up on top left corner sits over recipe with image changing, or in the background or a rectangle that stays at the top of the screen.
-		//banner image is chicken laying an egg, with chicken sound that occurs when it lays it.
-		//playble gif (tap/click to play/stop) of relevant animation?
-
-		//Knife parallax code (no plugins)
-
-		
-
-
-
-		</script>
-
-		<!--Working with ScrollMagic to add events to images-->
-		<script>
-
-		/*
-		//init controller
-		var controller = new ScrollMagic.Controller();
-
-		//create a scene
-		var scene = new ScrollMagic.Scene({
-			duration: 100000, //the scene should last for a scroll distance of 100px
-			offset: 50, //start this scene after scrolling 50px
-
-		})
-		.setPin("#potato-img") //pins the element for the scene duration
-		.addTo(controller); //assign the scene to the controller
-		*/
-
-
-		</script>
+		</div>
+		</div>
 
 		<script src = "main.js"></script>
-		
+
 	</body>
 
 <!--
