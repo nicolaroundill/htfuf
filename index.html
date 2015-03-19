@@ -6,109 +6,95 @@
 		Victoria University 2015
 		MDDN 352
 		Ubiqutious Computing -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-		<script src="js/bootstrap.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+
+		<link rel = "stylesheet" href = "css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "css/bootstrap-theme.min.css">
+		<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src = "http://code.jquery.com/jquery-1.7.0.min.js"></script>
 		
 		<!--Pop up script-->
-    	<script src="js/bpopup.js"></script>
+    	<script src = "js/bpopup.js"></script>
 
-		<link rel="stylesheet" type = "text/css" href="stylesheet.css">
-
+    	<!--My stylesheet-->
+		<link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
 	</head>
 
 
 	<body>
+		<!--Parallax knife set up-->
+		<img src = "src/img/knife01.png" id = "parallax1">
+		<img src = "src/img/knife02.png" id = "parallax2">
+		<img src = "src/img/knife03.png" id = "parallax3">
+		<img src = "src/img/knife01.png" id = "parallax4">
+		<img src = "src/img/knife02.png" id = "parallax5">
+		<img src = "src/img/knife03.png" id = "parallax6">
 
-	<img src = "src/img/knife01.png" id = "parallax1">
-	<img src = "src/img/knife02.png" id = "parallax2">
-	<img src = "src/img/knife03.png" id = "parallax3">
-	<img src = "src/img/knife01.png" id = "parallax4">
-	<img src = "src/img/knife02.png" id = "parallax5">
-	<img src = "src/img/knife03.png" id = "parallax6">
+		<div id = "initSound">
+			<audio id = "gravySplat">
+				<!--sound source http://soundbible.com/1733-Spit-Splat.html-->
+				<source src = "src/sound/splatSound.wav" type = "audio/wav"> 
+			</audio>
+		</div>
 
-	<div id = "initSound">
-		<audio id = "gravySplat">
-			<source src = "src/sound/splatSound.wav" type = "audio/wav"> 
-		</audio>
-	</div>
+		<div id = "content_layer"></div>
 
-	<div id = "content_layer"></div>
+		<!--Header section-->
+		<div class="container">
+			<!--Header buffer div-->
+			<div class = "col-md-12 headerFooter"></div>
 
-		<!--Header-->
-			<div class="container">
-				<!--Header buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
-
-				<!--Here is the header content-->
-				<div class = "col-md-3"></div>
-				<div class ="col-md-6">
-					<h1>How to fuck up food</h1>
-				</div>
-				<div class = "col-md-3"></div>
-
-				<!--Footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
+			<!--Here is the header content-->
+			<div class = "col-md-3"></div>
+			<div class ="col-md-6">
+				<h1>How to fuck up food</h1>
 			</div>
+			<div class = "col-md-3"></div>
 
+			<!--Footer buffer div-->
+			<div class = "col-md-12 headerFooter"></div>
+		</div>
 
+		<!--The recipe content starts here-->
 
-			<!--The recipe starts here-->
-
-			<div class = "thumbnail bannerImage" style = "background: #6a5d50; box-shadow: 10px 10px 20px">
-				<img src = "src/img/chicken_banner.png" alt = "chicken">
-			</div>
-
-
-			<div class = "container">
-				<!--Content div-->				
-				
-				<!--Footer buffer div-->
-				<div class = "col-md-12 headerFooter"></div>
-			</div>	
+		<!--Code for using that big ass chicken banner-->
+		<div class = "thumbnail bannerImage" style = "background: #6a5d50; box-shadow: 10px 10px 20px">
+			<img src = "src/img/chicken_banner.png" alt = "chicken">
+		</div>
 		
 
 		<!--Introduction to recipe here-->
-		
+		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "ingredients">
-			<!--Content header buffer div-->
+
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
+
 					<div class = "row">
-						<div class = "col-md-12 recipeDiv">
-							
+						<div class = "col-md-12 recipeDiv">							
 							<h1 style = "font-size: 5em">Shit you need:</h1>
 						</div>
 
 						<div class = "col-md-12 ingreIcon">
 							<div id="iconMass">
 
-
+								<!--Original ingredient icon (the one you automatically see-->
 								<img src = "src/img/potatoesIcon.png" id = "potatoIcon">
-
+								<!--Popup div for icon-->
 								<div id = "popupPotato" class = "thumbnail">
 									<img src = "src/img/potatoesIcon.png" id = "potatoIcon">
 								</div>
 
-
 								<img src = "src/img/saltIcon.png" id = "saltIcon">
-
 								<div id = "popupSalt" class = "thumbnail">
 									<img src = "src/img/saltIcon.png" id = "saltIcon">
 								</div>
 
-
 								<img src = "src/img/chickenIcon.png" id = "chickenIcon">
-
 								<div id = "popupChicken" class = "thumbnail">
 									<img src = "src/img/chickenIcon.png" id = "chickenIcon">
 								</div>
 
-
-								<img src = "src/img/peasIcon.png" id = "peasIcon">	
-
+								<img src = "src/img/peasIcon.png" id = "peasIcon">
 								<div id = "popupPeas" class = "thumbnail">
 									<img src = "src/img/peasIcon.png" id = "peasIcon">
 								</div>
@@ -116,21 +102,24 @@
 							</div>
 						</div>
 					</div>
+
+					<!--Content footer buffer div-->
+					<div class = "col-md-12 headerFooter"></div>
 					
 				</div>
-				<!--Content footer buffer div-->
-					
 			</div>
-		</div>
-		
 
-		
+		</div>
+			
+
+			
 
 
 		<!--Recipe step one-->
+		<!--Content footer buffer div-->
 		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "part01">
-			<!--Content header buffer div-->
+
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 
@@ -141,6 +130,7 @@
 							</div>
 						</div>
 						<div class = "col-md-6 recipeDiv">
+
 							
 							<p></p>
 							<p>Roast Chicken. Simple. Quick. Delicious. But not tonight. Turn the oven on. 180 degrees. Fuck yes. Play around with the oven timer. Know how to use it? Fuck no. Turn that shit to auto off. Don't know what that means? Who gives a shit.</p>
@@ -148,24 +138,26 @@
 
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
+
 				</div>
 			</div>
+
 		</div>
 
 
 
 		<!--Recipe step two-->
+		<!--Content footer buffer div-->
 		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "part02">
-			<!--Content header buffer div-->
 
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 					
-					<div class = "row">
-						
+					<div class = "row">						
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
@@ -179,18 +171,22 @@
 							</div>
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
+
 				</div>
 			</div>
+
 		</div>
 
 
 
 		<!--Recipe step three-->
+		<!--Content footer buffer div-->
 		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "part03">
-			<!--Content header buffer div-->
+
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 					
@@ -207,23 +203,26 @@
 
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
+
 				</div>
 			</div>
+
 		</div>
 
 
 
 		<!--Recipe step four-->
+		<!--Content footer buffer div-->
 		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "part04">
-			<!--Content header buffer div-->
+
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 					
-					<div class = "row">
-						
+					<div class = "row">						
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
@@ -237,18 +236,22 @@
 							</div>
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
+
 				</div>
 			</div>
+
 		</div>
 
 
 
 		<!--Recipe step five-->
+		<!--Content footer buffer div-->
 		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "part05">
-			<!--Content header buffer div-->
+
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 					
@@ -265,10 +268,13 @@
 
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
+
 				</div>
 			</div>
+
 		</div>
 
 
@@ -276,38 +282,40 @@
 		<!--Recipe step six-->
 		<div class = "col-md-12 headerFooter"></div>
 		<div class = "container" id = "part06">
-			<!--Content header buffer div-->
+
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 					
-					<div class = "row">
-						
+					<div class = "row">						
 						<div class = "col-md-6 recipeDiv">
 							
 							<p></p>
-							<p>Tinfoil chicken. Return to oven. Oven isn't hot? Dafaq? Realise that the time being set to auto off means the oven wasn't ever properly on. Well fuck. Fix timer. Re-add potatoes to oven. Wait another fucking hour.</p>
+							<p>Tinfoil chicken. Return to oven. Oven isn't hot? Dafaq? Realise that the time being set to auto off means the oven wasn't ever properly on. Well fuck. 
+							Fix timer. Re-add potatoes to oven. Wait another fucking hour.</p>
 
 						</div>
-						<div class = "col-md-1"></div>
-						<div class = "col-md-5 recipeDiv">
+						<div class = "col-md-6 recipeDiv">
 							<div class = "thumbnail recipeImage">
 								<img src = "src/img/tinfoil01.png" id = "tinfoil">
 							</div>
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
-					</div>
+
 				</div>
 			</div>
+		</div>
 
 
 
 
-		<!--Recipe step seven-->
+			<!--Recipe step seven-->
+			<!--Content header buffer div-->
 			<div class = "col-md-12 headerFooter"></div>
 			<div class = "container" id = "part07">
-			<!--Content header buffer div-->
+			
 			<div class = "thumbnail outerBorder">
 				<div class = "thumbnail borderProperties">
 					
@@ -324,31 +332,18 @@
 
 						</div>
 					</div>
+
 					<!--Content footer buffer div-->
 					<div class = "col-md-12 headerFooter"></div>
 
+				</div>
 			</div>
 
-
-		<!--Page Footer buffer-->
-		<!--div  class = "col-md-12" style = "height: 100px"></div-->
-
-		</div>
 		</div>
 
 		<script src = "main.js"></script>
 
 	</body>
-
-<!--
-To Do;
-Create graphics for webpage
-Add content
-
-
--->
-
-
 
 
 </html>

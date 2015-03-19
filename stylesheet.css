@@ -3,9 +3,7 @@ Victoria University 2015
 MDDN 352
 Ubiqutious Computing*/
 
-/*
-CSS for banner section
-*/
+/*CSS for banner section*/
 .bannerImage {
 	max-height: 500px;
 	min-height: 100px;
@@ -21,10 +19,7 @@ CSS for banner section
 	max-height: 400px;
 }
 
-/*
-CSS for recipe steps
-*/
-
+/*CSS for recipe steps*/
 .recipeImage {
 	max-height: 400px;
 	max-width: 400px;
@@ -45,7 +40,7 @@ CSS for recipe steps
 	min-height: 50px;
 }
 
-/* Custom font set up. Font retrieved from http://www.dafont.com/djb-rubias-tiny-script.font?text=messy+kitchen&back=theme */
+/* Custom font set up. Retrieved from http://www.dafont.com/djb-rubias-tiny-script.font?back=theme */
 @font-face{
 	font-family: "messy";
 	src: url("src/fonts/DJB_Rubia's_Tiny_Script.ttf");
@@ -68,6 +63,12 @@ p {
 	padding: 1em;
 }
 
+body {
+	background-color: #2f2c28;
+
+}
+
+/*Making my little sections look PRETTEH*/
 .thumbnail {
 	background: #999083;
 }
@@ -86,12 +87,8 @@ p {
 	box-shadow: 10px 10px 20px;
 }
 
-body {
-	background-color: #2f2c28;
 
-}
-
-
+/*Parallax settings for the knives*/
 #parallax1 {
 	position: fixed;
 	z-index: -2;
@@ -153,10 +150,12 @@ body {
 	left: 90%;
 }
 
+/*In all honesty I'm not sure what this is for. I used to know but I dont any more*/
 #content_layer{
 	position: absolute;
 }
 
+/*Setting sizes for the ingredient icons (under: "Shit you need")*/
 .ingreIcon img {
 	max-width: 100px;
 	max-height: 100px;
@@ -166,7 +165,7 @@ body {
 	text-align: center;
 }
 
-
+/*Settings for popups*/
 #popupPotato{
 	display: none;	
 }
