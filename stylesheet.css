@@ -65,6 +65,7 @@ p {
 	font-size: 1.8em;
 	text-align: left;
 	color: #6a5d50;
+	vertical-align: middle;
 }
 
 .thumbnail {
@@ -167,7 +168,7 @@ body {
 #testPopupContent { 
 	display: none;
 	text-align: center; 
-	
+
 }
 
 
