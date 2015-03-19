@@ -1,17 +1,18 @@
-//variable for scrollChange01 - changing the potato image
+//variable for scrollChange0#
 var imageSet02 = 1;
 var imageSet03 = 1;
 var imageSet04 = 1;
 var imageSet05 = 1;
 var imageSet06 = 1;
-//so you can change the function to begin earlier
+
+//so you can change the function to begin earlier on the page
 var yPadding = 600;
 var scrollCount = 0;
 
 window.onload = function(){
 	parallax();
 	
-	//change potato image
+	//change respective image
 	$(window).scroll(scrollChange01);
 	$(window).scroll(scrollChange02);
 	$(window).scroll(scrollChange03);
@@ -19,6 +20,8 @@ window.onload = function(){
 	$(window).scroll(scrollChange05);
 	$(window).scroll(scrollChange06);
 	$(window).scroll(scrollChange07);
+
+	popUpThisShit();
 
 	//Makes Parallax scroll work
 	window.addEventListener("scroll", parallax, false);
@@ -175,3 +178,46 @@ function scrollChange07(){
 		imageSource07.src = "src/img/served01.png";
 	}
 }
+
+/*
+//function for pop ups
+function popup01 () {
+	$("smallPotatoes").click(function(){
+		$('[data-toggle = "popover"]').popover();
+	})
+		
+	
+}
+*/
+ function popUpThisShit () {
+ 	var popUpConent = document.getElementById("testPopupContent");
+
+            // Binding a click event
+            // From jQuery v.1.7.0 use .on() instead of .bind()
+            $('#popupTest').bind('click', function(e) {
+
+                // Prevents the default action to be triggered. 
+                e.preventDefault();
+
+                // Triggering bPopup when click event is fired
+                $('#testPopupContent').bPopup({
+
+                	//position: [100, 300]
+                });
+
+            });
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
